@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreJogja</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="item-container">
+            <nav class="navbar navbar-expand-lg px-5 py-3 navbar-dark bg-transparent">
+                <div class="nav-navbar mt-3 mb-5 mx-0 mx-sm-5 my-4 py-1 px-2 px-xl-4 py-xl-2">
+                    <div class="nav-navbar-items">
+                        <a class="navbar-brand d-flex column align-items-center fw-bold" href="#">
+                            <img src="asetsImage/ExploreJogja.png" alt="Logo" width="30" height="24"
+                                class="d-inline-block align-text-top ms-2">
+                            ExploreJogja
+                        </a>
+                    </div>
+                    <!-- <div class="nav-navbar-items">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Regions</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <!-- lOGIN / SIGIN UP
+                    <div class="nav-navbar-items">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-decoration-none" href="#">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-decoration-none" href="#">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- TOGGLE BTN -->
+                    <button class="navbar-toggler shadow-none border-0 d-lg-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- SIDEBAR -->
+                    <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <!-- SIDEBAR HEADER -->
+                        <div class="offcanvas-header text-white border-bottom">
+                            <h5 style="font-family:Raleway ;" class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                                ExploreJogja</h5>
+                            <button type="button" class="btn-close btn-close-white shadow-none"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <!-- SIDEBAR BODY -->
+                        <div class="offcanvas-body d-flex flex-column p-4 p-lg-0 flex-lg-row">
+                            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-white" href="#">Home</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-white" href="#about">About</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-white" href="allDestinations.html">Destinations</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-white" href="#regions">Regions</a>
+                                </li>
+
+                            </ul>
+                            <!-- LOGIN SIGN UP -->
+                            <div
+                                class="d-flex justify-content-center align-items-center flex-column flex-lg-row gap-3 me-2">
+                                <a class="text-white text-decoration-none p-2" href="login.html">Login</a>
+                                <a class="text-white text-decoration-none p-2" href="register.html">Sign Up</a>
+                                <a class="text-white text-decoration-none p-2" href="admin/dashboardAdmin.html">Admin</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <!-- TITLE -->
+            <section class="title mt-5">
+                <div class="title-content">
+                    <h1 class="display-5 fw-bold">Jelajahi Pesona Yogyakarta</h1>
+                    <h3 class="fst-italic">Satu Tiket Menuju Petualangan!</h3>
+                    <p class="mb-4">Dapatkan tiket wisata ke destinasi terbaik di Yogyakarta dengan praktis.</p>
+                    <a href="allDestinations.html" class="btn btn-sm btn-primary btn-md-lg px-2 py-1 py-lg-2 px-lg-5">Pesan Sekarang</a>
+                </div>
+            </section>
+            <div class="blur-overlay"></div>
+        </div>
+        <!-- CONTENT -->
+        <div>
+            <!-- KATALOG POPULAR -->
+            <section>
+                <div class="container-katalog">
+                    <div
+                        class="container-katalog-items mx-5 px-lg-2 my-3 gap-sm-4 gap-lg-4 d-flex flex-column text-center text-lg-start">
+                        <!-- SUB TITLE -->
+                        <h2 class="fw-bold text-primary mb-4 mb-sm-1">Popular Destinations</h2>
+
+                        <div class="katalog-card row py-lg-4">
+                            <!-- CARD POPULAR 1 -->
+                            <div class="container-card col-sm-3 col-6 p-0 d-flex justify-content-center">
+                                <div class="card p-0 m-2 m-lg-3">
+                                    <img src="asetsImage/Candi Prambanan.png" class="card-img-top" alt="...">
+                                    <div
+                                        class="card-body d-flex flex-column gap-1 gap-lg-3 px-2 p-md-3 py-0 mb-1 mb-md-0">
+                                        <div class="detail-card d-flex flex-column gap-0 gap-lg-2">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <h5 class="card-title fw-semibold m-0 p-0">Lorem Ipsum</h5>
+                                                <a href="#"><img src="asetsImage/Address.png"></a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-row gap-2">
+                                                <p class="my-0">5,0</p>
+                                                <img src="asetsImage/Star.png" class="w-20px h-20px">
+                                            </div>
+                                        </div>
+                                        <div class="detail-btn d-flex flex-row justify-content-between">
+                                            <a href="#"
+                                                class="btn btn-primary px-3 px-sm-2 px-lg-4 py-1 fw-semibold w-auto">Rp50.000</a>
+                                            <p class="my-0 align-self-center">Stock: 10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD POPULAR 2 -->
+                            <div class="container-card col-sm-3 col-6 p-0 d-flex justify-content-center">
+                                <div class="card p-0 m-2 m-lg-3">
+                                    <img src="asetsImage/Candi Prambanan.png" class="card-img-top" alt="...">
+                                    <div
+                                        class="card-body d-flex flex-column gap-1 gap-lg-3 px-2 p-md-3 py-1 mb-1 mb-md-0">
+                                        <div class="detail-card d-flex flex-column gap-0 gap-lg-2">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <h5 class="card-title fw-semibold m-0 p-0">Lorem Ipsum</h5>
+                                                <a href="#"><img src="asetsImage/Address.png"></a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-row gap-2">
+                                                <p class="my-0">5,0</p>
+                                                <img src="asetsImage/Star.png" class="w-20px h-20px">
+                                            </div>
+                                        </div>
+                                        <div class="detail-btn d-flex flex-row justify-content-between">
+                                            <a href="#"
+                                                class="btn btn-primary px-3 px-sm-2 px-lg-4 py-1 fw-semibold w-auto">Rp50.000</a>
+                                            <p class="my-0 align-self-center">Stock: 10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD POPULAR 3 -->
+                            <div class="container-card col-sm-3 col-6 p-0 d-flex justify-content-center">
+                                <div class="card m-2 m-lg-3">
+                                    <img src="asetsImage/Candi Prambanan.png" class="card-img-top" alt="...">
+                                    <div
+                                        class="card-body d-flex flex-column gap-1 gap-lg-3 px-2 p-md-3 py-0 mb-1 mb-md-0">
+                                        <div class="detail-card d-flex flex-column gap-0 gap-lg-2">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <h5 class="card-title fw-semibold m-0 p-0">Lorem Ipsum</h5>
+                                                <a href="#"><img src="asetsImage/Address.png"></a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-row gap-2">
+                                                <p class="my-0">5,0</p>
+                                                <img src="asetsImage/Star.png" class="w-20px h-20px">
+                                            </div>
+                                        </div>
+                                        <div class="detail-btn d-flex flex-row justify-content-between">
+                                            <a href="#"
+                                                class="btn btn-primary px-3 px-sm-2 px-lg-4 py-1 fw-semibold w-auto">Rp50.000</a>
+                                            <p class="my-0 align-self-center">Stock: 10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD POPULAR 4 -->
+                            <div class="container-card col-sm-3 col-6 p-0 d-flex justify-content-center">
+                                <div class="card m-2 m-lg-3">
+                                    <img src="asetsImage/Candi Prambanan.png" class="card-img-top" alt="...">
+                                    <div
+                                        class="card-body d-flex flex-column gap-1 gap-lg-3 px-2 p-md-3 py-0 mb-1 mb-md-0">
+                                        <div class="detail-card d-flex flex-column gap-0 gap-lg-2">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <h5 class="card-title fw-semibold m-0 p-0">Lorem Ipsum</h5>
+                                                <a href="#"><img src="asetsImage/Address.png"></a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-row gap-2">
+                                                <p class="my-0">5,0</p>
+                                                <img src="asetsImage/Star.png" class="w-20px h-20px">
+                                            </div>
+                                        </div>
+                                        <div class="detail-btn d-flex flex-row justify-content-between">
+                                            <a href="#"
+                                                class="btn btn-primary px-3 px-sm-2 px-lg-4 py-1 fw-semibold w-auto">Rp50.000</a>
+                                            <p class="my-0 align-self-center">Stock: 10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUTTON SEE MORE -->
+                        <div class="see-more d-flex justify-content-center ">
+                            <a href="allDestinations.html" class="btn fw-semibold text-primary px-3 px-lg-4 py-1 py-lg-2 fw-semibold">See
+                                More
+                                <img src="asetsImage/Advance.png" class=" h-20 w-20">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- KATEGORI REGIONS -->
+            <section id="regions">
+                <div class="container-katalog-items my-5 my-sm-5">
+                    <!-- SUB TITLE -->
+                    <div class="d-flex justify-content-center">
+                        <h2 class="fw-bold text-primary mb-3 mb-sm-5">Discover Beauty in Every Corner!</h2>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="container h-100%">
+                        <div class="my-4 mx-3 mx-md-5 ps-5 pe-4 px-sm-0 row d-flex flex-lg-column gap-lg-3 justify-content-center align-items-center"
+                            data-masonry='{"percentPosition": true }' >
+                            <!-- CARD KETEGORI 1 -->
+                            <div class="cardregions col-6 col-sm-2 p-0 mx-2 mx-xl-3 mb-2 mb-md-0 image-card-1">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card rounded-4 position-relative overflow-hidden">
+                                        <img src="asetsImage/Kota Yogyakarta.png" class="rounded-4 image-card-1"
+                                            alt="...">
+                                        <div
+                                            class="card-items-text position-absolute ps-2 pt-3 p-lg-3 align-items-start text-white">
+                                            <h5 class="d-flex align-self-start fw-semibold shadow-sm m-0 p-0">Kulonprogo
+                                            </h5>
+                                            <p class=" fw-light shadow-sm p-0 "> 4 Destinations</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- CARD KETEGORI 2 -->
+                            <div class="cardregions col-6 col-sm-2 mx-2 mx-xl-3 p-0 mb-2 mb-md-0 image-card-2">
+                                <a href="#" class=" text-decoration-none">
+                                    <div class="card rounded-4 position-relative overflow-hidden">
+                                        <img src="asetsImage/Kota Yogyakarta.png" class=" rounded-4 image-card-2"
+                                            alt="...">
+                                        <div
+                                            class="card-items-text position-absolute ps-2 pt-3 p-lg-3 align-items-start text-white">
+                                            <h5 class=" d-flex align-self-start  fw-semibold shadow-sm m-0">Kulonprogo
+                                            </h5>
+                                            <p class=" fw-light shadow-sm p-0"> 4 Destinations</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- CARD KETEGORI 3 -->
+                            <div class="cardregions col-6 col-sm-2 p-0 mx-2 mx-xl-3 mb-2 mb-md-0 image-card-3">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card rounded-4 position-relative overflow-hidden">
+                                        <img src="asetsImage/Kota Yogyakarta.png" class="  rounded-4 image-card-3"
+                                            alt="...">
+                                        <div
+                                            class="card-items-text position-absolute ps-2 pt-3 p-lg-3 align-items-start text-white">
+                                            <h5 class=" d-flex align-self-start fw-semibold shadow-sm m-0">Kulonprogo
+                                            </h5>
+                                            <p class="fw-light shadow-sm p-0"> 4 Destinations</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- CARD KETEGORI 4 -->
+                            <div class="cardregions col-6 col-sm-2 p-0 mx-2 mx-xl-3 mb-2 mb-md-0 image-card-4">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card rounded-4 position-relative overflow-hidden ">
+                                        <img src="asetsImage/Kota Yogyakarta.png" class=" rounded-4 image-card-4"
+                                            alt="...">
+                                        <div
+                                            class="card-items-text position-absolute ps-2 pt-3 p-lg-3 align-items-start text-white">
+                                            <h5 class=" d-flex align-self-start fw-semibold shadow-sm m-0">Kulonprogo
+                                            </h5>
+                                            <p class="fw-light shadow-sm p-0"> 4 Destinations</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- CARD KETEGORI 5-->
+                            <div class="cardregions col-6 col-sm-2 p-0 mx-2 mx-xl-3 mb-2 mb-md-0 image-card-5">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card rounded-4 position-relative overflow-hidden">
+                                        <img src="asetsImage/Kota Yogyakarta.png" class="rounded-4 image-card-5"
+                                            alt="...">
+                                        <div
+                                            class="card-items-text position-absolute ps-2 pt-3 p-lg-3 align-items-start text-white">
+                                            <h5 class="d-flex align-self-start fw-semibold shadow-sm m-0">Kulonprogo
+                                            </h5>
+                                            <p class="fw-light shadow-sm"> 4 Destinations</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- WHY YOU CHOOSE EXPLORE JOGJA -->
+            <section id="about">
+                <!-- SUB TITLE -->
+                <div class="container-katalog-items m-sm-5 mt-5 d-flex flex-column">
+                    <div>
+                        <h2 class="fw-bold text-primary m-0 mt-lg-4 text-center">Why Choose ExploreJogja?</h2>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="d-flex flex-lg-row flex-column justify-content-center px-5 px-lg-2 mx-3 my-4  ">
+                        <div class="choose d-flex ps-1 ps-lg-2 py-1 py-lg-2 m-2 m-lg-2 shadow gap-lg-1 rounded-4">
+                            <img class="m-1 img-fluid" src="asetsImage/image 6.png">
+                            <div class="detail-brand d-flex flex-column gap-1  pt-1 pe-1">
+                                <p class="fw-semibold mx-1 p-0 my-0">Easy and Convenient</p>
+                                <p class="fw-light mx-1 p-0 my-0">Book your Jogja tickets in just a few clicks, fast and
+                                    hassle-free!</p>
+                            </div>
+                        </div>
+                        <div class="choose d-flex ps-1 ps-lg-2 py-1 py-lg-2 m-2 m-lg-2 shadow gap-lg-1 rounded-4">
+                            <img class="m-1 img-fluid" src="asetsImage/image 8.png">
+                            <div class="detail-brand d-flex flex-column gap-1 pt-1 pe-1">
+                                <p class="fw-semibold mx-1 p-0 my-0">Best Prices</p>
+                                <p class="fw-light mx-1 p-0 my-0">Enjoy great deals and affordable rates for every
+                                    destination.</p>
+                            </div>
+                        </div>
+                        <div class="choose d-flex ps-1 ps-lg-2 py-1 py-lg-2 m-2 m-lg-2 shadow gap-lg-1 rounded-4">
+                            <img class="m-1 img-fluid" src="asetsImage/image 7.png">
+                            <div class="detail-brand d-flex flex-column gap-1  pt-1 pe-1">
+                                <p class="fw-semibold mx-1 p-0 my-0">Complete Travel Options</p>
+                                <p class="fw-light mx-1 p-0 my-0">Book your Jogja tickets in just a few clicks, fast and
+                                    hassle-free!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="d-flex align-items-end">
+                <div class="this-footer">
+                    <div class="bg-primary text-white d-flex align-items-center flex-column p-3 p-sm-4 gap-2">
+                        <!-- FOOTER BRAND -->
+                        <div class="d-flex flex-row">
+                            <img src="asetsImage/ExploreJogja.png" style="width: 20px; height: 20px;">
+                            <h6 class=" fw-semibold mx-1 my-0 p-0">ExploreJogja</h6>
+                        </div>
+                        <!-- FOOTER MEDSOS -->
+                        <div class="d-flex flex-row gap-2">
+                            <a href="https://www.instagram.com/ayuatikahhh?igsh=MWp2YmRxcmt1OW8wdg=="><img src="asetsImage/Instagram.png"></a>
+                            <a href="https://www.figma.com/design/TufGAhTAsQQKq8IYNtLjy0/Untitled?node-id=0-1&t=1H9tnRVPWfu0AvWm-1"><img src="asetsImage/Figma.svg"></a>
+                            <a href="https://youtu.be/EZc07FebND0?si=Jt3n4lGgk6dbv_ti"><img src="asetsImage/YouTube.png"></a>
+                        </div>
+                        <!-- FOOTER DETAILS -->
+                        <div class="detail-footer d-flex align-items-center flex-column">
+                            <div class="d-flex flex-row">
+                                <p class="fw-light m-0 p-0">Contact Us: +62 812-888-5555 | explorejogja@ugm.ac.id</p>
+                            </div>
+                            <div class="d-flex flex-row gap-2 text-center">
+                                <img class="Copyright" src="asetsImage/Copyright All Rights Reserved.svg">
+                                <p class="fw-light m-0 p-0">2025 ExploreJogja - All Rights Reserved. A Project of Ayu
+                                    Atikah, Universitas Gadjah Mada. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</body>
+
+</html>
